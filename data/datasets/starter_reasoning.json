@@ -1,0 +1,24 @@
+{
+  "id": "starter_reasoning",
+  "name": "Small Model Fast Reasoning",
+  "description": "Concise step-by-step logic and mathematical reasoning pairs.",
+  "format": "alpaca",
+  "created_at": "2026-09-16T08:24:19.335Z",
+  "pairs": [
+    {
+      "instruction": "Solve for x: 3x + 15 = 45. Explain step-by-step.",
+      "input": "",
+      "output": "1. Subtract 15 from both sides: 3x = 30.\n2. Divide both sides by 3: x = 10.\nFinal Answer: x = 10."
+    },
+    {
+      "instruction": "Explain why time complexity of binary search is O(log n).",
+      "input": "",
+      "output": "At each step, binary search eliminates half the remaining elements in a sorted array. If there are n elements, it can divide by 2 at most log2(n) times before reaching a single element."
+    },
+    {
+      "instruction": "Write a clean Python function to check if a string is a palindrome.",
+      "input": "",
+      "output": "def is_palindrome(s: str) -> bool:\n    cleaned = ''.join(c.lower() for c in s if c.isalnum())\n    return cleaned == cleaned[::-1]"
+    }
+  ]
+}
